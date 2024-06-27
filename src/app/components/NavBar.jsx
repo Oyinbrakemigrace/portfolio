@@ -1,8 +1,9 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { IoMoon } from 'react-icons/io5'
+import { MdWbSunny } from 'react-icons/md'
 
-function NavBar({setDarkMode, darkMode}) {
+function NavBar({ setDarkMode, darkMode }) {
     const [show, setShow] = useState(false)
 
     const handleTransition = () => {
@@ -18,13 +19,14 @@ function NavBar({setDarkMode, darkMode}) {
         return () => window.removeEventListener('scroll', handleTransition)
     }, [])
     return (
-       <div className="lg:pb-10 pb-20">
-            <nav className={`py-4 flex justify-between bg-[#AD7FAD] bg-opacity-30 lg:px-10 px-4 fixed left-0 w-full ${!show ? "transition-all duration-500 ease-in bg-opacity-0" : ""
-          }`}>
+        <div className="lg:pb-10 pb-20">
+            <nav className={`py-4 flex justify-between z-50 bg-[#AD7FAD] bg-opacity-30 lg:px-10 px-4 fixed left-0 w-full ${!show ? "transition-all duration-500 ease-in bg-opacity-0" : ""
+                }`}>
                 <h1 className="text-xl">grace</h1>
                 <div className="flex items-center">
                     <div className='active:scale-105 transition-all'>
-                        <IoMoon onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white" />
+                        {darkMode ? <IoMoon onClick={() => setDarkMode(false)} className="cursor-pointer text-2xl dark:text-white" /> : <MdWbSunny className="cursor-pointer text-2xl text-[#301c30]" onClick={() => setDarkMode(true)} />
+                        }
                     </div>
                     <div className='active:scale-105 transition-all ease-out duration-500'>
                         <a
@@ -36,7 +38,7 @@ function NavBar({setDarkMode, darkMode}) {
                     </div>
                 </div>
             </nav>
-       </div>
+        </div>
     )
 }
 
