@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import carai from '../../../public/assets/carai.png'
 import anon from '../../../public/assets/anon.png'

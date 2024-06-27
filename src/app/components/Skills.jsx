@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import react from '../../../public/assets/react.svg'
 import css from '../../../public/assets/css.svg'
