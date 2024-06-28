@@ -45,7 +45,7 @@ function ContactMe() {
       <h2 className='font-bold lg:text-5xl text-3xl my-5 text-center bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA]'>
         Get in touch with me
       </h2>
-      <p className='text-zinc-700 dark:text-zinc-200 lg:text-center lg:mb-5 text-start mb-3'>Drop me a line or more using the form below, and let&apos;s make some digital magic together!</p>
+      <p className='text-zinc-700 dark:text-zinc-200 lg:text-center lg:mb-5 text-start mb-8'>Drop me a line or more using the form below, and let&apos;s make some digital awesomeness together!</p>
       <form onSubmit={handleSubmit} className='flex flex-col gap-6 justify-center items-center dark:text-white w-full max-w-lg mx-auto'>
         <div className='flex flex-col w-full'>
           <label htmlFor="name" className='mb-2 text-zinc-700 dark:text-zinc-400 font-medium'>Full Name</label>
