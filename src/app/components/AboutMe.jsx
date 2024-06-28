@@ -24,7 +24,7 @@ function AboutMe() {
                 earth is a PR?&quot; 😂 But, determined to succeed, I quickly learned the ropes and became known for
                 my prompt submissions, even earning a commendation from the project owner.
                 That&apos;s me - driven, detail-oriented, and always up for a challenge. Let&apos;s build something amazing
-                together!.
+                together!
             </p>
         </div>
     );

@@ -40,32 +40,32 @@ function Portfolio() {
             projectImage: dineqr,
             projectName: 'DQR',
             projectHref: '#',
-            projectDescription: 'A restaurant that app empowers restaurant owners to manage their business with ease. Owners can create and update menu items, receive orders in real-time, and seamlessly handle incoming transactions. It is a comprehensive solution for enhancing efficiency and providing a top- notch dining experience for customers.',
+            projectDescription: 'A restaurant app that empowers restaurant owners to manage their business with ease. Owners can create, edit and update menu items, receive orders in real-time, and seamlessly handle incoming transactions. It is a comprehensive solution for enhancing efficiency and providing a top- notch dining experience for customers.',
             tools: ['React JS', "Tailwind CSS", 'Socket.io']
         },
     ]
     return (
         <div>
             <h2 className='font-bold lg:text-5xl text-3xl text-center bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA]'>Portfolio</h2>
-            <h4 className='bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA] text-center italic py-5'>Featured Projects</h4>
+            <h4 className='text-zinc-700 dark:text-zinc-200 text-center italic py-5'>Featured Projects</h4>
             <div className='grid lg:grid-cols-[repeat(auto-fit,400px)] gap-5 justify-center'>
                 {
                     projects.map((project) => {
                         return (
-                            <a key={project.id} href={project.projectHref} target='_blank' className='w-full overflow-hidden min-h-[400px] rounded-md hover:scale-105 transition-all bg-gradient-to-r from-[#AD7FAD] to-[#F1B2AA] lg:p-5 p-3'>
+                            <a key={project.id} href={project.projectHref} target='_blank' className='w-full overflow-hidden min-h-[500px]  relative rounded-md hover:scale-105 transition-all bg-gradient-to-r from-[#AD7FAD] to-[#F1B2AA] lg:p-5 p-3'>
                                 <div>
                                     <Image src={project.projectImage} alt="projectImage" className='h-56 w-full' />
                                 </div>
-                                <div className='pt-3'>
+                                <div className='pt-3 '>
                                     <div className='flex justify-between items-center'>
                                         <p className='font-bold text-zinc-700 text-xl lg:text-2xl'>{project.projectName}</p>
                                         <p className='bg-[#AD7FAD] text-xs font-semibold rounded-full px-2 capitalize text-zinc-700'>{project.openSource && 'open-source project'}</p>
                                     </div>
                                     <p className='text-sm lg:text-base text-zinc-700 italic'>{project.projectDescription}</p>
-                                    <div className='space-x-2 mt-6'>
+                                    <div className='space-x-2 absolute bottom-3'>
                                         {project.tools.map((tool, index) => {
                                             return (
-                                                <span className='text-zinc-800 ' key={index}>
+                                                <span className='text-zinc-800' key={index}>
                                                     {tool}
                                                     {index < project.tools.length - 1 && " | "}
                                                 </span>
