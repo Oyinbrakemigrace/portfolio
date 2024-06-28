@@ -45,7 +45,7 @@ function Portfolio() {
                 {
                     projects.map((project) => {
                         return (
-                            <a key={project.id} href={project.projectHref} className='w-full overflow-hidden max-h-[400px] rounded-md hover:scale-105 transition-all bg-gradient-to-r from-[#AD7FAD] to-[#F1B2AA] lg:p-5 p-3'>
+                            <a key={project.id} href={project.projectHref} target='_blank' className='w-full overflow-hidden max-h-[400px] rounded-md hover:scale-105 transition-all bg-gradient-to-r from-[#AD7FAD] to-[#F1B2AA] lg:p-5 p-3'>
                                 <div>
                                     <Image src={project.projectImage} alt="" className='h-56 w-full' />
                                 </div>

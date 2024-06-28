@@ -20,8 +20,8 @@ function Skills() {
             <h4 className='bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA] text-center italic py-5'>My current tech stack</h4>
             <div className='grid lg:grid-cols-[repeat(auto-fit,150px)] grid-cols-[repeat(auto-fit,50px)] gap-5 justify-center mt-5'>
                 {
-                    images.map((image)=>{
-                        return <Image src={image} alt='icons' className='lg:w-32 lg:h-32' />
+                    images.map((image,index)=>{
+                        return <Image src={image} alt='icons' key={index} className='lg:w-32 lg:h-32' />
                     })
                 }
             </div>

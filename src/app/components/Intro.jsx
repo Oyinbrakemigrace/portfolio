@@ -18,12 +18,10 @@ function Intro() {
                 </p>
             </div>
             <div className="relative lg:w-1/2 h-full mt-4 mx-auto overflow-hidden">
-                <div className="relative ">
+                <div className="relative">
                     <Image src={grace} alt="myImage" className="lg:w-screen lg:h-screen w-full h-full m-auto rounded-full" />
                 </div>
             </div>
-
-
         </div>
     )
 }
