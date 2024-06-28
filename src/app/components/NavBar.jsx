@@ -22,7 +22,7 @@ function NavBar({ setDarkMode, darkMode }) {
         <div className="lg:pb-10 pb-20">
             <nav className={`py-4 flex justify-between z-50 lg:px-10 px-4 fixed left-0 w-full ${!show ? "transition-all duration-500 ease-in bg-opacity-0" : "bg-[#AD7FAD] bg-opacity-30"
                 }`}>
-                <h1 className="text-xl">grace</h1>
+                <h1 className="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA]">GO</h1>
                 <div className="flex items-center">
                     <div className='active:scale-105 transition-all'>
                         {darkMode ? <IoMoon onClick={() => setDarkMode(false)} className="cursor-pointer text-2xl dark:text-white" /> : <MdWbSunny className="cursor-pointer text-2xl text-[#301c30]" onClick={() => setDarkMode(true)} />
