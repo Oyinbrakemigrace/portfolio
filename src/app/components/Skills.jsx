@@ -17,7 +17,7 @@ function Skills() {
     return (
         <div>
             <h2 className='font-bold lg:text-5xl text-3xl text-center bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA]'>Skills</h2>
-            <h4 className='bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA] text-center italic py-5'>My current tech stack</h4>
+            <h4 className='bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA] text-center italic py-5'>My tools</h4>
             <div className='grid lg:grid-cols-[repeat(auto-fit,150px)] grid-cols-[repeat(auto-fit,50px)] gap-5 justify-center mt-5'>
                 {
                     images.map((image,index)=>{

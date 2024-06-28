@@ -12,7 +12,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className=" bg-zinc-100 min-h-screen px-10 dark:bg-gradient-to-tl from-[#301c30] to-black">
+      <main className=" bg-zinc-100 min-h-screen lg:px-10 px-5 dark:bg-gradient-to-tl from-[#301c30] to-black">
         <section>
           <NavBar setDarkMode={setDarkMode} darkMode={darkMode} />
           <Intro />

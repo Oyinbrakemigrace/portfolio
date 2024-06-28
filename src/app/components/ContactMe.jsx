@@ -41,7 +41,7 @@ function ContactMe() {
   };
 
   return (
-    <div className='container mx-auto p-5'>
+    <div className='container mx-auto '>
       <h2 className='font-bold lg:text-5xl text-3xl my-5 text-center bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA]'>
         Contact me
       </h2>

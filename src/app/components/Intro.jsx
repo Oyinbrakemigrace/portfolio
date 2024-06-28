@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import grace from "../../../public/assets/myPicture.jpg";
+import grace from "../../../public/assets/myPicture.jpeg";
 import Image from 'next/image';
 
 function Intro() {
