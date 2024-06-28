@@ -16,7 +16,7 @@ function AboutMe() {
                 detail and a solid background in UI/UX design to every task. My belief in hands-on learning has 
                 driven me to build a couple of personal projects, each one pushing my skills further.  <br />
                 When I&apos;m not coding, you&apos;ll find me making people smile, offering a helping hand, or 
-                expanding my knowledge through reading. I also love to dance, it's my way of keeping life fun and dynamic. <br /> My ultimate goal is to become so proficient that I can code in my sleep, crafting
+                expanding my knowledge through reading. I also love to dance, it&apos;s my way of keeping life fun and dynamic. <br /> My ultimate goal is to become so proficient that I can code in my sleep, crafting
                 innovative software solutions that help businesses thrive and make people smile.
                 A funny story from my early days: during my first open-source project,  I was the greenest newbie fresh out of bootcamp,
                 I was tasked with creating a PR. My initial reaction? &quot;What on God&apos;s green earth is a 
