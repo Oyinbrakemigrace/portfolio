@@ -20,7 +20,7 @@ function NavBar({ setDarkMode, darkMode }) {
     }, [])
     return (
         <div className="lg:pb-10 pb-20">
-            <nav className={`py-4 flex justify-between z-50 bg-[#AD7FAD] bg-opacity-30 lg:px-10 px-4 fixed left-0 w-full ${!show ? "transition-all duration-500 ease-in bg-opacity-0" : ""
+            <nav className={`py-4 flex justify-between z-50 lg:px-10 px-4 fixed left-0 w-full ${!show ? "transition-all duration-500 ease-in bg-opacity-0" : "bg-[#AD7FAD] bg-opacity-30"
                 }`}>
                 <h1 className="text-xl">grace</h1>
                 <div className="flex items-center">
@@ -30,10 +30,11 @@ function NavBar({ setDarkMode, darkMode }) {
                     </div>
                     <div className='active:scale-105 transition-all ease-out duration-500'>
                         <a
-                            href="#"
+                            href="https://drive.google.com/file/d/1-nGp8SuKP6zPolxk_qU_R7WTjVR-3P28/view?usp=drivesdk"
+                            target='_blank'
                             className="bg-gradient-to-r from-[#AD7FAD] to-[#F1B2AA] text-white px-4 py-2  rounded-md ml-8"
                         >
-                            Resume
+                            Résumé
                         </a>
                     </div>
                 </div>
