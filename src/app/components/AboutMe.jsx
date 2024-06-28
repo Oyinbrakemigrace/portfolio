@@ -6,7 +6,7 @@ function AboutMe() {
         <div>
             <h2 className='font-bold lg:text-5xl text-3xl my-5 text-center bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA]'>About me</h2>
             <p className='dark:text-zinc-200 text-start lg:leading-8 leading-6'>
-                Hi, I&apos;m Grace, a Frontend Developer with a knack for turning complex problems into elegant 
+                Hi, I&apos;m Grace, a Frontend Developer with a flair for turning complex problems into elegant 
                 solutions. My journey began at Lagos School of Programming (LASOP), where my stellar performance 
                 earned me the responsibility of handling the school&apos;s website project. Not only did I 
                 complete all tasks ahead of schedule, but this early success also fueled my passion for diving 

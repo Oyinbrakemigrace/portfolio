@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react'
+import { SquareLoader, SyncLoader } from 'react-spinners';
 
 function ContactMe() {
   const [formData, setFormData] = useState({
@@ -89,9 +90,12 @@ function ContactMe() {
         </div>
         <button
           type="submit"
-          className='mt-5 w-full px-6 py-3 bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA] text-white font-bold rounded-md hover:from-[#F1B2AA] hover:to-[#AD7FAD] focus:outline-none focus:ring-2 focus:ring-[#AD7FAD]'
+          className={`mt-5 w-full px-6 py-3 ${loading ? 'bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA] cursor-none' : 'bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA]'} text-white font-bold rounded-md hover:from-[#F1B2AA] hover:to-[#AD7FAD] focus:outline-none focus:ring-2 focus:ring-[#AD7FAD]`}
         >
-          {loading ? 'Submitting...' : "Submit"}
+          {loading ? (<div className='flex justify-center items-center gap-2'>
+            <span>Submitting</span>
+            <SquareLoader color='#FFF' size={14} />
+          </div>) : "Submit"}
         </button>
       </form>
     </div>
