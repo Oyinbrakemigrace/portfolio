@@ -31,7 +31,7 @@ function Portfolio() {
             projectName: 'AnonChat',
             openSource: true,
             projectHref: 'https://annon-chat.vercel.app/',
-            projectDescription: "An Anonymous Chat platform that connects individuals to converse allowing users to engage in real-time, anonymous conversations with other users.",
+            projectDescription: "An Anonymous Chat platform that enables users to engage in real-time anonymous conversations with other users.",
             tools: ['Next JS', "Tailwind CSS", 'Socket.io']
         },
 

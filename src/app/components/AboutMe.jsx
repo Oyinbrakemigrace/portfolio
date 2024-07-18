@@ -10,11 +10,11 @@ function AboutMe() {
                 solutions. My journey began at Lagos School of Programming (LASOP), where my stellar performance 
                 earned me the responsibility of handling the school&apos;s website project. Not only did I 
                 complete all tasks ahead of schedule, but this early success also fueled my passion for diving 
-                into the world of open-source projects.
+                into the world of open-source projects. <br /> <br />
                 In these open-source journeys, I gained invaluable real-world experience, even leading a team 
                 on one project. I specialize in React JS, Tailwind CSS, and Next JS, bringing a keen eye for 
                 detail and a solid background in UI/UX design to every task. My belief in hands-on learning has 
-                driven me to build a couple of personal projects, each one pushing my skills further.  <br />
+                driven me to build a couple of personal projects, each one pushing my skills further.  <br /> <br />
                 When I&apos;m not coding, you&apos;ll find me making people smile, offering a helping hand, or 
                 expanding my knowledge through reading. I also love to dance, it&apos;s my way of keeping life fun and dynamic. <br /> My ultimate goal is to become so proficient that I can code in my sleep, crafting
                 innovative software solutions that help businesses thrive and make people smile.
