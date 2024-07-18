@@ -30,7 +30,7 @@ function NavBar({ setDarkMode, darkMode }) {
                     </div>
                     <div className='active:scale-105 transition-all ease-out duration-500'>
                         <a
-                            href="https://drive.google.com/file/d/1-nGp8SuKP6zPolxk_qU_R7WTjVR-3P28/view?usp=drivesdk"
+                            href="https://drive.google.com/file/d/1OHEmEbq4oT9RRcuieAjQ4n4XTeaMPo6_/view?usp=drivesdk"
                             target='_blank'
                             className="bg-gradient-to-r from-[#AD7FAD] to-[#F1B2AA] text-white px-4 py-2  rounded-md ml-8"
                         >

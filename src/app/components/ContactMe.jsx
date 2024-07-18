@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from 'react'
 import { SquareLoader, SyncLoader } from 'react-spinners';
+import EmailSubmitted from './EmailSubmitted';
+import EmailNotSubmitted from './EmailNotSubmitted';
 
 function ContactMe() {
   const [formData, setFormData] = useState({
@@ -9,10 +11,12 @@ function ContactMe() {
     message: '',
   });
   const [loading, setLoading] = useState(false)
+  const [messageSent, setMessageSent] = useState(false)
+  const [messageNotSent, setMessageNotSent] = useState(false)
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,22 +31,33 @@ function ContactMe() {
     })
       .then((response) => {
         if (response.ok) {
-          alert('Email sent successfully!');
+          //alert('Email sent successfully!');
+          setMessageSent(true)
+          setTimeout(() => {
+            setMessageSent(false);
+          }, 2000);
           setLoading(false)
           setFormData({ name: '', email: '', message: '' });
         } else {
-          alert('Failed to send email. Please try again.');
+          //alert('Failed to send email. Please try again.');
+          setMessageNotSent(true)
+          setTimeout(() => {
+            setMessageNotSent(false);
+          }, 3000);
         }
       })
       .catch((error) => {
         setLoading(false)
         console.error('Error:', error);
-        alert('Failed to send email. Please try again.');
+        setMessageNotSent(true)
+        setTimeout(() => {
+          setMessageNotSent(false);
+        }, 3000);
       });
   };
 
   return (
-    <div className='container mx-auto '>
+    <div className='container mx-auto relative'>
       <h2 className='font-bold lg:text-5xl text-3xl my-5 text-center bg-clip-text text-transparent bg-gradient-to-tl from-[#AD7FAD] to-[#F1B2AA]'>
         Get in touch with me
       </h2>
@@ -98,6 +113,12 @@ function ContactMe() {
           </div>) : "Submit"}
         </button>
       </form>
+      {messageSent &&
+        <div className='absolute inset-0 flex justify-center items-center'>
+          <EmailSubmitted /> </div>}
+
+      {messageNotSent && <div className='absolute inset-0 flex justify-center items-center'> <EmailNotSubmitted /> </div>}
+
     </div>
   )
 }
