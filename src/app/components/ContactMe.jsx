@@ -114,11 +114,10 @@ function ContactMe() {
         </button>
       </form>
       {messageSent &&
-        <div className='absolute inset-0 flex justify-center items-center'>
+        <div className='absolute inset-0 bg-black bg-opacity-25 flex justify-center items-center'>
           <EmailSubmitted /> </div>}
 
-      {messageNotSent && <div className='absolute inset-0 flex justify-center items-center'> <EmailNotSubmitted /> </div>}
-
+      {messageNotSent && <div className='absolute inset-0 bg-black bg-opacity-25 flex justify-center items-center'> <EmailNotSubmitted /> </div>}
     </div>
   )
 }
