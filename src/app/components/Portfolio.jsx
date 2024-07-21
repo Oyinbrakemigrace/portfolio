@@ -4,6 +4,7 @@ import carai from '../../../public/assets/carai.png'
 import anon from '../../../public/assets/anon.png'
 import cinemz from '../../../public/assets/cinemz.png'
 import dineqr from '../../../public/assets/dineqr.png'
+import brain from '../../../public/assets/brain.png'
 import Image from 'next/image'
 
 function Portfolio() {
@@ -22,7 +23,7 @@ function Portfolio() {
             projectImage: cinemz,
             projectName: 'Cinemz',
             projectHref: 'https://cinemz.vercel.app',
-            projectDescription: 'Cinemz lets you explore a curated library of movies and TV shows with ease. Enjoy a responsive UI and powerful search functionality, all backed by external APIs to bring you a vast collection of media. Find, discover, and enjoy your favorite entertainment seamlessly!',
+            projectDescription: 'Cinemz lets you explore a curated library of movies and TV shows with ease. Enjoy a responsive UI and powerful search functionality, all backed by external APIs to bring you a vast collection of media.',
             tools: ['React JS', "React-Redux", "Tailwind CSS", 'API']
         },
         {
@@ -42,6 +43,14 @@ function Portfolio() {
             projectHref: 'https://dashboard.dineqr.io',
             projectDescription: 'A restaurant app that empowers restaurant owners to manage their business with ease. Owners can create, edit and update menu items, receive orders in real-time, and seamlessly handle incoming transactions.',
             tools: ['React JS', "Tailwind CSS", 'Socket.io']
+        },
+        {
+            id: 5,
+            projectImage: brain,
+            projectName: 'Brain.',
+            projectHref: 'https://chimela-brain.vercel.app/',
+            projectDescription: 'A clean, modern portfolio website for a product designer, highlighting projects with high-quality visuals and intuitive navigation.',
+            tools: ['React JS', "Tailwind CSS", "Formspree"]
         },
     ]
     return (

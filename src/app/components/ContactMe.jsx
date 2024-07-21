@@ -31,7 +31,6 @@ function ContactMe() {
     })
       .then((response) => {
         if (response.ok) {
-          //alert('Email sent successfully!');
           setMessageSent(true)
           setTimeout(() => {
             setMessageSent(false);
@@ -39,7 +38,6 @@ function ContactMe() {
           setLoading(false)
           setFormData({ name: '', email: '', message: '' });
         } else {
-          //alert('Failed to send email. Please try again.');
           setMessageNotSent(true)
           setTimeout(() => {
             setMessageNotSent(false);
