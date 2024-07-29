@@ -11,7 +11,13 @@ import {IoMdArrowUp} from 'react-icons/io'
 
 export default function Home() {
   const navbarRef = useRef(null);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(()=>{
+    if(typeof window !== 'undefined'){
+      const appMode = localStorage.getItem('darkMode')
+      return appMode ? JSON.parse(appMode) : true
+    }
+    return darkMode
+  });
   const [showScrollArrow, setShowScrollArrow] = useState(false);
 
     useEffect(() => {
@@ -30,7 +36,12 @@ export default function Home() {
     }, []);
       const scrollToTop = () => {
         navbarRef.current.scrollIntoView({ behavior: "smooth" });
-      };
+      }
+
+      useEffect(() => {
+        localStorage.setItem('darkMode', JSON.stringify(darkMode))
+      }, [darkMode])
+      
 
   return (
     <div className={darkMode ? "dark" : ""}>
