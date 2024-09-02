@@ -40,7 +40,7 @@ function Portfolio() {
             id: 4,
             projectImage: dineqr,
             projectName: 'DQR',
-            projectHref: 'https://dashboard.dineqr.io',
+            projectHref: '',
             projectDescription: 'A restaurant app that empowers restaurant owners to manage their business with ease. Owners can create, edit and update menu items, receive orders in real-time, and seamlessly handle incoming transactions.',
             tools: ['React JS', "Tailwind CSS", 'Socket.io']
         },
