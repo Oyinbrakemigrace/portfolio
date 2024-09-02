@@ -10,27 +10,28 @@ import Footer from "./components/Footer";
 import {IoMdArrowUp} from 'react-icons/io'
 
 export default function Home() {
-  const navbarRef = useRef(null);
-  const [darkMode, setDarkMode] = useState(true);
-  const [showScrollArrow, setShowScrollArrow] = useState(false);
+   const navbarRef = useRef(null);
+   const [darkMode, setDarkMode] = useState(true);
+   const [showScrollArrow, setShowScrollArrow] = useState(false);
 
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY > window.innerHeight) {
-          setShowScrollArrow(true);
-        } else {
-          setShowScrollArrow(false);
-        }
-      };
+   useEffect(() => {
+     const handleScroll = () => {
+       if (window.scrollY > window.innerHeight) {
+         setShowScrollArrow(true);
+       } else {
+         setShowScrollArrow(false);
+       }
+     };
 
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-      const scrollToTop = () => {
-        navbarRef.current.scrollIntoView({ behavior: "smooth" });
-      };
+     window.addEventListener("scroll", handleScroll);
+     return () => {
+       window.removeEventListener("scroll", handleScroll);
+     };
+   }, []);
+   const scrollToTop = () => {
+     navbarRef.current.scrollIntoView({ behavior: "smooth" });
+   };
+
 
   return (
     <div className={darkMode ? "dark" : ""}>
