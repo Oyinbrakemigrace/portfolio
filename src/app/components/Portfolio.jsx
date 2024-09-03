@@ -5,6 +5,7 @@ import anon from '../../../public/assets/anon.png'
 import cinemz from '../../../public/assets/cinemz.png'
 import dineqr from '../../../public/assets/dineqr.png'
 import brain from '../../../public/assets/brain.png'
+import goJob from "../../../public/assets/goJobBoard.png"
 import Image from 'next/image'
 
 function Portfolio() {
@@ -28,21 +29,20 @@ function Portfolio() {
         },
         {
             id: 3,
+            projectImage: goJob,
+            projectName: 'GO JobBoard',
+            projectHref: 'https://go-job-board.vercel.app/',
+            projectDescription: 'GO JobBoard is a web application that serves as a platform for companies to post job listings and for users to search and apply for jobs. It offers features tailored to both job seekers and employers, with intuitive interfaces and secure authentication.',
+            tools: ['React JS', "shadcn/ui", "Clerk", "Supabase"]
+        },
+        {
+            id: 4,
             projectImage: anon,
             projectName: 'AnonChat',
             openSource: true,
             projectHref: 'https://annon-chat.vercel.app/',
             projectDescription: "An Anonymous Chat platform that enables users to engage in real-time anonymous conversations with other users.",
             tools: ['Next JS', "Tailwind CSS", 'Socket.io']
-        },
-
-        {
-            id: 4,
-            projectImage: dineqr,
-            projectName: 'DQR',
-            projectHref: '',
-            projectDescription: 'A restaurant app that empowers restaurant owners to manage their business with ease. Owners can create, edit and update menu items, receive orders in real-time, and seamlessly handle incoming transactions.',
-            tools: ['React JS', "Tailwind CSS", 'Socket.io']
         },
         {
             id: 5,
@@ -51,6 +51,14 @@ function Portfolio() {
             projectHref: 'https://chimela-brain.vercel.app/',
             projectDescription: 'A clean, modern portfolio website for a product designer, highlighting projects with high-quality visuals and intuitive navigation.',
             tools: ['React JS', "Tailwind CSS", "Formspree"]
+        },
+        {
+            id: 6,
+            projectImage: dineqr,
+            projectName: 'DQR',
+            projectHref: '',
+            projectDescription: 'A restaurant app that empowers restaurant owners to manage their business with ease. Owners can create, edit and delete menu items, receive orders in real-time, and seamlessly handle incoming transactions.',
+            tools: ['React JS', "Tailwind CSS", 'Socket.io']
         },
     ]
     return (
