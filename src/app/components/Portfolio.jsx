@@ -3,9 +3,9 @@ import React from 'react'
 import carai from '../../../public/assets/carai.png'
 import anon from '../../../public/assets/anon.png'
 import cinemz from '../../../public/assets/cinemz.png'
-import dineqr from '../../../public/assets/dineqr.png'
 import brain from '../../../public/assets/brain.png'
 import goJob from "../../../public/assets/goJobBoard.png"
+import kcdFarms from "../../../public/assets/kcdFarms.png"
 import Image from 'next/image'
 
 function Portfolio() {
@@ -54,11 +54,11 @@ function Portfolio() {
         },
         {
             id: 6,
-            projectImage: dineqr,
-            projectName: 'DQR',
-            projectHref: '',
-            projectDescription: 'A restaurant app that empowers restaurant owners to manage their business with ease. Owners can create, edit and delete menu items, receive orders in real-time, and seamlessly handle incoming transactions.',
-            tools: ['React JS', "Tailwind CSS", 'Socket.io']
+            projectImage: kcdFarms,
+            projectName: 'KCD Farms',
+            projectHref: 'https://www.kcdfarms.info',
+            projectDescription: 'KCD Farms is a clean, user-friendly website with smooth animations and easy navigation for a seamless user experience.',
+            tools: ['React JS', "Tailwind CSS", 'Express JS']
         },
     ]
     return (
