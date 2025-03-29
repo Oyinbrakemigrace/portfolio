@@ -28,7 +28,7 @@ function NavBar({ setDarkMode, darkMode }) {
                     <div className='active:scale-105 transition-all'>
                     {darkMode ? <IoMoon onClick={() => setDarkMode(false)} className="cursor-pointer text-2xl dark:text-white" /> : <MdWbSunny className="cursor-pointer text-2xl text-[#301c30]" onClick={() => setDarkMode(true)}/>}
                     </div>
-                    <div className='active:scale-105 transition-all ease-out duration-500'>
+                    {/* <div className='active:scale-105 transition-all ease-out duration-500'>
                         <a
                             href="https://drive.google.com/file/d/1OHEmEbq4oT9RRcuieAjQ4n4XTeaMPo6_/view?usp=drivesdk"
                             target='_blank'
@@ -36,7 +36,7 @@ function NavBar({ setDarkMode, darkMode }) {
                         >
                             Résumé
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </nav>
         </div>
